@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <title>Oblig1</title>
+</head>
+
+<body>
+
+    <div>
+
+        <h1>Bestilling av kinobilletter</h1>
+
+        <p><label>Velg film: </label><select id="film">
+            <option>Velg film</option>
+            <option>Film1</option>
+            <option>Film2</option>
+            <option>Film3</option>
+            <option>Film4</option>
+            <option>Film5</option>
+            <option>Film6</option>
+            <option>Film7</option>
+        </select><br></p>
+
+        <p>
+            Antall<label for="inpAntall"></label><input id="inpAntall" type="number">
+        </p>
+        <p>
+            Fornavn<label for="inpFornavn"></label><input id="inpFornavn" type="text">
+        </p>
+        <p>
+            Etternavn<label for="inpEtternavn"></label><input id="inpEtternavn" type="text">
+        </p>
+        <p>
+            Telefonnummer<label for="inpTelefonnr"></label><input id="inpTelefonnr" type="tel">
+        </p>
+        <p>
+           Epost<label for="inpEpost"></label><input id="inpEpost" type="text"><br>
+        </p>
+        <p>
+            <button id="btnKjop" onclick="visBilletter()">Kjøp billett</button><br>
+        </p>
+
+    </div>
+    <div>
+
+        <h1>Alle Billetter</h1>
+
+        <p id="alleBillettene">
+
+        </p>
+
+        <button type="button" onclick="slettBilletter()">Slett alle</button>
+    </div>
+
+
+
+
+</body>
+</html>
