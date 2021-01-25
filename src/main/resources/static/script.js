@@ -1,3 +1,4 @@
+
 let billettArray = [];
 let teller = 0;
 
@@ -39,6 +40,7 @@ function visBilletter(){
         feilMedlingEpost.innerHTML = "Må skrive noe inn i epost"
     }
 
+
     if (!feil){
         let billett = {
             film: vfilm,
@@ -51,21 +53,21 @@ function visBilletter(){
 
         alleBillettene.style.display = "block";
         const row = alleBillettene.insertRow(teller+1);
-        const cell1 = row.insertCell(0);
-        const cell2 = row.insertCell(1);
-        const cell3 = row.insertCell(2);
-        const cell4 = row.insertCell(3);
-        const cell5 = row.insertCell(4);
-        const cell6 = row.insertCell(5);
+        const cellFilm = row.insertCell(0);
+        const cellAntall = row.insertCell(1);
+        const cellFnavn = row.insertCell(2);
+        const cellEnavn = row.insertCell(3);
+        const cellTlfnr = row.insertCell(4);
+        const cellMail = row.insertCell(5);
 
         billettArray.push(billett);
 
-        cell1.innerHTML = billettArray[teller].film;
-        cell2.innerHTML = billettArray[teller].ant;
-        cell3.innerHTML = billettArray[teller].fnavn;
-        cell4.innerHTML = billettArray[teller].enavn;
-        cell5.innerHTML = billettArray[teller].tlfnr;
-        cell6.innerHTML = billettArray[teller].mail;
+        cellFilm.innerHTML = billettArray[teller].film;
+        cellAntall.innerHTML = billettArray[teller].ant;
+        cellFnavn.innerHTML = billettArray[teller].fnavn;
+        cellEnavn.innerHTML = billettArray[teller].enavn;
+        cellTlfnr.innerHTML = billettArray[teller].tlfnr;
+        cellMail.innerHTML = billettArray[teller].mail;
 
         form.reset();
 
